@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FoodDelivery</name>
+    </assembly>
+    <members>
+        <member name="M:FoodDelivery.Controllers.BasketController.GetBasket">
+            <summary>
+            Получить корзину пользователя
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.BasketController.AddDish(System.Guid)">
+            <summary>
+            Добавить блюдо в корзину
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.BasketController.RemoveDish(System.Guid,System.Boolean)">
+            <summary>
+            Уменьшает количество блюда в корзине (если increase = true), или удаляет блюдо из корзины полностью (если increase = false)
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.DishController.GetDishes(System.Collections.Generic.List{FoodDelivery.Models.DishCategory},System.Boolean,System.Nullable{FoodDelivery.Models.Dto.DishSorting},System.Int32)">
+            <summary>
+            Получить список блюд (меню)
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.DishController.GetDishById(System.Guid)">
+            <summary>
+            Получить информацию о конкретном блюде
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.DishController.CheckCanSetRating(System.Guid)">
+            <summary>
+            Проверить, может ли пользователь установить рейтинг блюду
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.DishController.SetRating(System.Guid,System.Int32)">
+            <summary>
+            Установить рейтинг для блюда
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.OrderController.GetOrderInfo(System.Guid)">
+            <summary>
+            Получить информацию о конкретном заказе
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.OrderController.GetOrderList">
+            <summary>
+            Получить список заказов
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.OrderController.CreateOrderFromBasket(FoodDelivery.Models.Dto.OrderCreateDto)">
+            <summary>
+            Создать заказ на основе блюд из корзины пользователя
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.OrderController.ConfirmOrderDelivery(System.Guid)">
+            <summary>
+            Подтвердить доставку заказа
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UserController.Register(FoodDelivery.Models.Dto.UserRegisterDto)">
+            <summary>
+            Зарегистрировать нового пользователя
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UserController.Login(FoodDelivery.Models.Dto.LoginDto)">
+            <summary>
+            Войти в систему
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UserController.Logout">
+            <summary>
+            Выйти из системы
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UserController.GetProfile">
+            <summary>
+            Получить профиль пользователя
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UserController.UpdateProfile(FoodDelivery.Models.Dto.UserEditDto)">
+            <summary>
+            Изменить профиль пользователя
+            </summary>
+        </member>
+        <member name="T:FoodDelivery.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodDelivery.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodDelivery.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FoodDelivery.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
